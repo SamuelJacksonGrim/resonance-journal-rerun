@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resonance-journal"
+version = "1.0.0"
+description = "A small local-first journal: create, edit, tag, link, search, archive, export."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+resonance = "resonance.cli:main"
+
+[tool.setuptools]
+packages = ["resonance"]
