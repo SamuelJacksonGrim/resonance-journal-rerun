@@ -1,5 +1,21 @@
 # Resonance Journal
 
+[![License: AGPL-3.0-only](https://img.shields.io/badge/license-AGPL--3.0--only-blue)](LICENSE)
+[![dual-license](https://img.shields.io/badge/dual--license-AGPL--3.0--only%20or%20commercial-blueviolet)](LICENSING.md)
+[![Python](https://img.shields.io/badge/python-%3E%3D3.11-3776AB?logo=python&logoColor=white)](pyproject.toml)
+[![dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)](pyproject.toml)
+[![built with](https://img.shields.io/badge/built%20with-Architecture--Blueprints--Frameworks-orange)](https://github.com/SamuelJacksonGrim/Architecture-Blueprints-Frameworks)
+
+## License
+
+This project is dual-licensed under **AGPL-3.0-only** OR a commercial license.
+
+- [LICENSE](LICENSE): GNU AGPL-3.0-only (the free track)
+- [LICENSING.md](LICENSING.md): how the two tracks work
+- [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md): the commercial agreement
+- [NOTICE](NOTICE): copyright, SPDX identifier, and provenance
+- [legal/AUTHORSHIP.md](legal/AUTHORSHIP.md): how this work was made
+
 A small, local-first journal for the terminal. Create, edit, tag, link,
 search, view, archive, delete, export, and import journal entries. Everything
 lives in one SQLite file on your machine. No account, no network, no
@@ -97,3 +113,21 @@ subprocess.
   these weren't requested. The service layer is independent of the CLI, so
   any of them can be added later.
 - **License file:** not chosen here. That decision is yours.
+
+## The two license tracks
+
+**Dual-licensed.** You pick one. If the AGPL works for you, you owe nothing.
+
+1. **[AGPL-3.0](LICENSE)** is free. You can use, run, modify, fork, and
+   redistribute this software at no charge. The copyleft catch is AGPL §13: if
+   you *modify* it and let other people interact with it over a network (SaaS,
+   an API, a hosted service), you must make the complete corresponding source of
+   your modified version available to those users under the AGPL-3.0.
+2. **A [paid commercial license](LICENSING.md)** covers closed-source,
+   proprietary, or hosted use without the AGPL's source-disclosure obligations.
+   Contact Samuel Jackson Grim, `samgrim97@gmail.com`, subject
+   `Commercial license — Resonance Journal (resonance-journal-rerun)`.
+
+This README is not a contract. The binding terms are [`LICENSE`](LICENSE) and a
+signed commercial agreement, if you buy one. Contributing:
+[`CONTRIBUTING.md`](CONTRIBUTING.md).

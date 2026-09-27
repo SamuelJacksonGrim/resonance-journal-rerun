@@ -5,7 +5,7 @@ order: 99
 fills: "architectural memory — consequential decisions, not every change"
 depends_on: []
 filled_by: both
-last_decision: D-009
+last_decision: D-010
 ---
 
 # DecisionLog — Resonance Journal
@@ -93,3 +93,18 @@ last_decision: D-009
 - **Alternatives:** Markdown-only export parsed back on import (fragile to hand edits, loses revisions); JSON only (not readable or navigable without the app); overwrite the target (could clobber the operator's files).
 - **Reason:** One lossless machine format for round-trip, one human format that works in any Markdown viewer with clickable links (G5). Links to entries left out by `--active-only` become plain text so no link is ever broken.
 - **Affects:** Contracts G3/G5, exchange.py, README.
+
+### D-010 — Under what terms is this released?
+- **Date:** 2026-09-27
+- **Decided by:** human (the AI applied it)
+- **Status:** active
+- **Decision:** Dual license, AGPL-3.0-only OR commercial, mirroring
+  resonance-memory: LICENSE, LICENSING.md, COMMERCIAL-LICENSE.md, NOTICE,
+  CONTRIBUTING.md, legal/, SPDX headers on source files, README badges, and
+  license metadata in pyproject.toml. legal/AUTHORSHIP.md records the one-shot
+  process as it actually happened, together with the author's position that
+  the work is protected through the methodology and the templates it was
+  instantiated from.
+- **Alternatives:** Copy resonance-memory's authorship record word for word
+  (rejected: its multi-model account is false for this project).
+- **Affects:** repository root, legal/, source file headers.
