@@ -18,9 +18,26 @@ rights.)
    depth selection, intake rules, security floor, the definition of "done", and
    the templates every design document starts from. That methodology governed
    how this work was designed and built.
-2. **The prompt.** The author wrote a one-shot request: *"Build a small local-first journal application called Resonance Journal. It should allow a user to create, edit, tag, link, search, view, archive, and export journal entries. Keep it self-contained and reasonably small. Use the Architecture-Blueprints-Frameworks repository as the methodology for designing and constructing the application. Start with this blank repository and take the project from intent through a working, verified implementation."*
-3. **Generation.** An AI tool (Claude) produced the design documents and code in a single autonomous pass under the revised methodology. That revision was itself the product of the author's review of the first build.
-4. **Selection and direction.** The author reviewed and graded the result. The run is recorded as a contaminated evaluation (see the resonance-journal repository's evals/).
+2. **The trials.** The work came out of consecutive, controlled trial and error
+   that the author directed. Each round changed the framework the next round
+   ran under, and the author decided what changed:
+   - **Trial 1:** a first build of a journal application
+     (`resonance-journal`). The author graded it and named what it missed.
+   - **Intake trials:** two rounds of fresh AI agents ran the framework's
+     intake on three different requests. Their failures became framework
+     revisions (Architecture-Blueprints-Frameworks D-013 to D-022).
+   - **Trial 2:** a re-run (`resonance-journal-rerun`). It exposed an answer
+     key inside the framework, and the author ruled that answer keys stay
+     outside the system under test (D-023).
+   - **Trial 3:** a blind build (`resonance-journal-blind`) from a prompt the
+     author wrote to be unseen by the framework. The author then judged it,
+     overruled an AI's defect finding, and directed the accent-folding fix.
+3. **This repository is Trial 2.** The author's prompt: *"Build a small local-first journal application called Resonance Journal. It should allow a user to create, edit, tag, link, search, view, archive, and export journal entries. Keep it self-contained and reasonably small. Use the Architecture-Blueprints-Frameworks repository as the methodology for designing and constructing the application. Start with this blank repository and take the project from intent through a working, verified implementation."*
+4. **The final generation pass.** An AI tool (Claude) wrote this repository's
+   design documents and code in one autonomous pass under the framework as it
+   stood after the earlier rounds. That pass is the last step of the sequence
+   above, not a standalone one-shot.
+5. **Selection and direction.** The author reviewed and graded the result. The run is recorded as a contaminated evaluation (see the resonance-journal repository's evals/).
 
 The AI tools were instruments. None is an author.
 
